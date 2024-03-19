@@ -21,6 +21,11 @@
 public class Program {
 
     public static void main(String[] args) {
+
+        Box<Apple> appleBox1 = new Box<>();
+        Box<Apple> appleBox2 = new Box<>();
+        Box<Orange> orangeBox1 = new Box<>();
+        Box<Orange> orangeBox2 = new Box<>();
          
     }
 
