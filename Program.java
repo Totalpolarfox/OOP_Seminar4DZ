@@ -26,6 +26,11 @@ public class Program {
         Box<Apple> appleBox2 = new Box<>();
         Box<Orange> orangeBox1 = new Box<>();
         Box<Orange> orangeBox2 = new Box<>();
+
+        appleBox1.generateFruits(new Apple());
+        appleBox2.generateFruits(new Apple());
+        orangeBox1.generateFruits(new Orange());
+        orangeBox2.generateFruits(new Orange());
          
     }
 
