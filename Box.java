@@ -38,5 +38,9 @@ public class Box<T extends Fruit> {
         }
     }
 
+    public static boolean compareWeight(Box box1, Box box2) {
+        return box1.getTotalWeight() == box2.getTotalWeight();
+    }
+
 
 }
