@@ -31,6 +31,26 @@ public class Program {
         appleBox2.generateFruits(new Apple());
         orangeBox1.generateFruits(new Orange());
         orangeBox2.generateFruits(new Orange());
+
+        System.out.println("Вес коробки 1 (Apple): " + appleBox1.getTotalWeight());
+        System.out.println("Вес коробки 2 (Apple): " + appleBox2.getTotalWeight());
+        System.out.println("Вес коробки 1 (Orange): " + orangeBox1.getTotalWeight());
+        System.out.println("Вес коробки 2 (Orange): " + orangeBox2.getTotalWeight());
+        System.out.println();
+        System.out.println("Сравнение веса: коробка 1 (Apple) и коробка 1 (Orange): " + Box.compareWeight(appleBox1, orangeBox1));
+        System.out.println("Сравнение веса: коробка 1 (Apple) и коробка 2 (Orange): " + Box.compareWeight(appleBox1, orangeBox2));
+        System.out.println("Сравнение веса: коробка 2 (Apple) и коробка 1 (Orange): " + Box.compareWeight(appleBox2, orangeBox1));
+        System.out.println("Сравнение веса: коробка 2 (Apple) и коробка 2 (Orange): " + Box.compareWeight(appleBox2, orangeBox2));
+        System.out.println();
+        System.out.println("Пересыпаем фрукты из коробки 1 (Apple) в коробку 2 (Apple)");
+        appleBox1.moveFruit(appleBox2);
+        System.out.println("Вес коробки 1 (Apple) после перемещения: " + appleBox1.getTotalWeight());
+        System.out.println("Вес коробки 2 (Apple) после перемещения: " + appleBox2.getTotalWeight());
+        System.out.println();
+        System.out.println("Пересыпаем фрукты из коробки 1 (Orange) в коробку 2 (Orange)");
+        orangeBox1.moveFruit(orangeBox2);
+        System.out.println("Вес коробки 1 (Orange) после перемещения: " + orangeBox1.getTotalWeight());
+        System.out.println("Вес коробки 2 (Orange) после перемещения: " + orangeBox2.getTotalWeight());
          
     }
 
