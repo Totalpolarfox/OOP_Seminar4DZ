@@ -30,17 +30,16 @@ public class Box<T extends Fruit> {
         return totalWeight;
     }
 
-        public void generateFruits(T fruit){
+    public void generateFruits(T fruit) {
         Random random = new Random();
         int units = random.nextInt(10, 25);
         for (int i = 0; i < units; i++) {
-            addFruit(fruit);            
+            addFruit(fruit);
         }
     }
 
     public static boolean compareWeight(Box box1, Box box2) {
         return box1.getTotalWeight() == box2.getTotalWeight();
     }
-
 
 }
