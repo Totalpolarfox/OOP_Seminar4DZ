@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Box<T extends Fruit> {
 
@@ -27,6 +28,14 @@ public class Box<T extends Fruit> {
             totalWeight += fruit.getWeight();
         }
         return totalWeight;
+    }
+
+        public void generateFruits(T fruit){
+        Random random = new Random();
+        int units = random.nextInt(10, 25);
+        for (int i = 0; i < units; i++) {
+            addFruit(fruit);            
+        }
     }
 
 
